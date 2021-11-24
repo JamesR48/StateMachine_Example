@@ -1,10 +1,10 @@
-( State Pattern Example - Explorer Bot )
+( State Pattern Example - Click Seeker Bot )
 
 The State Pattern uses a 'Finite State Machine' to store possible states and handle the transitions
 on how an entity can move from one state to the next. states can be constrained to a particular object so that
 it behaves differently depending on what's happening inside of the game.
 
-Explorer Bot States:
+Click Seeker Bot States:
 The scene has an Explorer Bot with some important classes:
 "Bot_StateMachine.cs" - This is the Bot's State Machine. It holds all the possible states
 "Bot_IdleState.cs" - This State defines the Bot's behaviour while in Idle (motionless) state
@@ -20,7 +20,7 @@ that might had changed when the state was entered.
 
 Press Play and left-click over the ground. There's a TargetAssigner gameObject that set targets for
 the Bot to responds to them according to its current state:
-- When a target is setted, the Bot'ss transition from 'Idle' to 'Searching' and move towards the target.
+- When a target is setted, the Bot'll transition from 'Idle' to 'Searching' and move towards the target.
 - If it is currently 'Searching' and gets to the target, it'll change to 'Found' state.
 - After a short waiting time, it'll transition back to 'Idle'.
 
