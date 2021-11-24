@@ -5,7 +5,7 @@ on how an entity can move from one state to the next. states can be constrained 
 it behaves differently depending on what's happening inside of the game.
 
 Click Seeker Bot States:
-The scene has an Explorer Bot with some important classes:
+The scene has a Bot with some important classes:
 "Bot_StateMachine.cs" - This is the Bot's State Machine. It holds all the possible states
 "Bot_IdleState.cs" - This State defines the Bot's behaviour while in Idle (motionless) state
 "Bot_SearchState.cs" - This State defines the Bot's behaviour while in Searching (seeking target) state
